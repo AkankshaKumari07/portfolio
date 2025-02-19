@@ -12,7 +12,7 @@ export default function MiniNavbar() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") || "light"; // Default to Light Mode
+    const savedTheme = localStorage.getItem("theme") || "dark"; // Default to Light Mode
     setTheme(savedTheme as "light" | "dark" | "system");
     document.documentElement.classList.add(savedTheme);
     setMounted(true);
