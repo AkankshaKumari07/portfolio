@@ -21,8 +21,8 @@ const Card: React.FC<CardProps> = ({ title, items, onItemClick, onMouseEnter, on
       transition={{ duration: 0.3, ease: "easeOut" }}
       className={`absolute top-full mt-2 rounded-lg shadow-lg p-3 border ${
         theme === "light"
-          ? "bg-white text-black border-gray-300"
-          : "bg-black text-foreground border-gray-700"
+          ? "bg-white text-black border-gray-300"  // ✅ Light mode: White background
+          : "bg-black text-white border-gray-700"  // ✅ Dark mode: Dark background
       }`}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
