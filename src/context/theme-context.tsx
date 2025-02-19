@@ -1,8 +1,7 @@
-// src/context/theme-context.tsx
 "use client";
 import { createContext, useContext, useEffect, useState, ReactNode } from "react";
 
-type Theme = "light" | "dark" | "system";
+type Theme = "light" | "dark";
 
 interface ThemeContextType {
   theme: Theme;
@@ -21,30 +20,15 @@ export const useTheme = (): ThemeContextType => {
 
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [theme, setTheme] = useState<Theme>(
-    (typeof window !== "undefined" ? localStorage.getItem("theme") : "system") as Theme
+    (typeof window !== "undefined" ? localStorage.getItem("theme") : "dark") as Theme // ✅ Default Dark Mode
   );
-
-  const applyTheme = (currentTheme: Theme) => {
-    const root = window.document.documentElement;
-    root.classList.remove("light", "dark");
-
-    if (currentTheme === "system") {
-      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-      root.classList.add(systemTheme);
-    } else {
-      root.classList.add(currentTheme);
-    }
-
-    localStorage.setItem("theme", currentTheme);
-  };
 
   useEffect(() => {
-    applyTheme(theme);
+    const root = window.document.documentElement;
+    root.classList.remove("light", "dark");
+    root.classList.add(theme);
+    localStorage.setItem("theme", theme);
   }, [theme]);
 
-  return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
-      {children}
-    </ThemeContext.Provider>
-  );
+  return <ThemeContext.Provider value={{ theme, setTheme }}>{children}</ThemeContext.Provider>;
 };

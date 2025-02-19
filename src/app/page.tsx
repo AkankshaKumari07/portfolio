@@ -9,7 +9,7 @@ import ContactLinks from "./components/ContactLinks";
 
 export default function Home() {
   return (
-    <main className="bg-black">
+    <main className="dark:bg-black bg-white">
       <Navbar />
       <Hero />
       <AboutPage />

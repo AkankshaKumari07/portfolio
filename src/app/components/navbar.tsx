@@ -13,7 +13,7 @@ export default function MiniNavbar() {
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") || "dark"; // Default to Light Mode
-    setTheme(savedTheme as "light" | "dark" | "system");
+    setTheme(savedTheme as "light" | "dark" );
     document.documentElement.classList.add(savedTheme);
     setMounted(true);
   }, [setTheme]);
@@ -26,7 +26,7 @@ export default function MiniNavbar() {
     return <Monitor className="w-5 h-5 text-gray-400" />;
   };
 
-  const toggleTheme = (selectedTheme: "light" | "dark" | "system") => {
+  const toggleTheme = (selectedTheme: "light" | "dark") => {
     setTheme(selectedTheme);
   };
 
@@ -84,8 +84,8 @@ export default function MiniNavbar() {
           {hoverMenu === "theme" && (
             <Card
               title="Theme"
-              items={["Light", "Dark", "System"]}
-              onItemClick={(label) => toggleTheme(label.toLowerCase() as "light" | "dark" | "system")}
+              items={["Light", "Dark"]}
+              onItemClick={(label) => toggleTheme(label.toLowerCase() as "light" | "dark")}
               onMouseLeave={() => setHoverMenu(null)}
             />
           )}
@@ -108,8 +108,8 @@ export default function MiniNavbar() {
         {hoverMenu === "theme" && (
           <Card
             title="Theme"
-            items={["Light", "Dark", "System"]}
-            onItemClick={(label) => toggleTheme(label.toLowerCase() as "light" | "dark" | "system")}
+            items={["Light", "Dark"]}
+            onItemClick={(label) => toggleTheme(label.toLowerCase() as "light" | "dark")}
             onMouseLeave={() => setHoverMenu(null)}
           />
         )}
