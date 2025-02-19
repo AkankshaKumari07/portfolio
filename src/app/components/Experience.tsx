@@ -7,12 +7,12 @@ export default function Experience() {
   return (
     <section id="experience" className="relative bg-white dark:bg-black text-black dark:text-white">
       {/* Header */}
-      <h2 className="text-4xl md:text-6xl font-extrabold md:mb-10 text-center md:text-left md:ml-[27rem] tracking-wide">
+      <h2 className="text-4xl md:text-6xl font-extrabold md:mb-10 text-center md:text-left xl:ml-[27rem] lg:px-0 px-8 tracking-wide">
         Experience
       </h2>
 
       {/* Line with blinking dot and experience content side by side */}
-      <div className="relative flex flex-col md:flex-row items-start md:ml-[28rem] space-y-12 md:space-x-12 md:space-y-0">
+      <div className="relative flex flex-col md:flex-row items-start xl:ml-[28rem] space-y-12 md:space-x-12 md:space-y-0 lg:px-0 px-8">
         {/* Left: Vertical Line with Blinking Dot (hidden on mobile) */}
         <div className="hidden md:block relative md:w-[1px] md:h-[70vh]">
           <div className="w-[1px] h-[70vh] dark:bg-gray-900 bg-gray-200">
