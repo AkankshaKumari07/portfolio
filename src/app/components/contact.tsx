@@ -25,7 +25,7 @@ const ContactForm = () => {
 
   return (
     <section id="contact" className="flex items-start justify-start bg-white text-black dark:bg-black dark:text-white px-12 md:py-20 py-12 relative">
-      <div className="w-full max-w-lg md:ml-[22rem] relative z-10">
+      <div className="w-full max-w-lg lg:ml-[22rem] relative z-10">
         {/* Header */}
         <h1 className="md:text-6xl text-4xl font-extrabold md:mb-12 text-center md:text-left mb-8">Contact Me</h1>
 
