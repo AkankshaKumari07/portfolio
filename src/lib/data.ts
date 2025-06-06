@@ -49,7 +49,7 @@ export const projects = [
     link: "https://tangerine-axolotl-d25d0b.netlify.app/",
     image: "/images/Airbus.png",
     coverImage: "/images/Airbus.png",
-    github: "https://github.com/AkankshaKumari07/dashboard-app",
+    github: "https://github.com/akankshaarushi/Airbus-clone---React-Project---9liojrica2xl",
   },
   {
     title: "Pizza Delivery App",
@@ -62,7 +62,7 @@ export const projects = [
     link: "https://pizza-order-weld.vercel.app/",
     image: "/images/pizza.png",
     coverImage: "/images/pizza.png",
-    github: "https://github.com/AkankshaKumari07/dashboard-app",
+    github: "https://github.com/AkankshaKumari07/pizza-order",
   },
   {
     title: "Receipe App",
@@ -72,10 +72,10 @@ export const projects = [
       " enhancing user experience across multiple devices ",
       " Integrated diverse recipes with ingredients, instructions, and multimedia (videos/blogs)",
     ],
-    link: "https://github.com/movie/repo",
+    link: "https://receipe-app-oorj.vercel.app/",
     image: "/images/receipe.png",
     coverImage: "/images/receipe.png",
-    github: "https://github.com/AkankshaKumari07/dashboard-app",
+    github: "https://github.com/AkankshaKumari07/Receipe-app",
   },
   {
     title: "Movie Search App",
@@ -88,7 +88,7 @@ export const projects = [
     link: "https://timely-peony-27d44c.netlify.app/",
     image: "/images/movie.png",
     coverImage: "/images/movie.png",
-    github: "https://github.com/AkankshaKumari07/dashboard-app",
+    github: "https://github.com/akankshaarushi/Movie-Search-App",
   },
   {
     title: "Dashboard App",
@@ -99,10 +99,10 @@ export const projects = [
       "Displayed user’s name under avatar, alongside options like goals, popular dishes, and menus.",
       "Ensured a user-friendly layout for seamless navigation and interaction across devices.",
     ],
-    link: "https://github.com/movie/repo",
+    link: "https://ubiquitous-elf-26fb3d.netlify.app/",
     image: "/images/dashboard.png",
     coverImage: "/images/dashboard.png",
-    github: "https://github.com/AkankshaKumari07/dashboard-app",
+    github: "https://github.com/akankshaarushi/dashboard",
   },
   {
     title: "Ev Population Dashboard",
@@ -114,7 +114,7 @@ export const projects = [
     link: "https://ev-dashboard-sable.vercel.app/",
     image: "/images/ev-dashboard.png",
     coverImage: "/images/ev-dashboard.png",
-    github: "https://github.com/AkankshaKumari07/dashboard-app",
+    github: "https://github.com/AkankshaKumari07/EV-DASHBOARD",
   },
 ];
 
